@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="SwiftyMsgs_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swifty Msgs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
+                                <rect key="frame" x="113.5" y="110" width="93.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="d1e-fi-ked" secondAttribute="centerY" id="H0s-hz-dDP"/>
+                            <constraint firstAttribute="centerX" secondItem="d1e-fi-ked" secondAttribute="centerX" id="wFy-hW-Bib"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="240"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="29"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tEp-02-Xfa">
+            <objects>
+                <viewController storyboardIdentifier="compact" id="3yM-io-rxe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMz-RO-VaB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-aK-HA5">
+                                <rect key="frame" x="112" y="105" width="95" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="New Note"/>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swifty Msgs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQm-PK-c8s">
+                                <rect key="frame" x="112" y="57" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z7t-aK-HA5" firstAttribute="leading" secondItem="GuW-dT-wv2" secondAttribute="leading" constant="112" id="9eO-qn-kGd"/>
+                            <constraint firstItem="Z7t-aK-HA5" firstAttribute="trailing" secondItem="hQm-PK-c8s" secondAttribute="trailing" id="HiT-HA-ZNf"/>
+                            <constraint firstItem="Z7t-aK-HA5" firstAttribute="top" secondItem="hQm-PK-c8s" secondAttribute="bottom" constant="27" id="PUL-zb-Gmf"/>
+                            <constraint firstItem="Z7t-aK-HA5" firstAttribute="centerY" secondItem="oMz-RO-VaB" secondAttribute="centerY" id="fZL-fG-bWL"/>
+                            <constraint firstItem="Z7t-aK-HA5" firstAttribute="leading" secondItem="hQm-PK-c8s" secondAttribute="leading" id="onE-ad-uNO"/>
+                            <constraint firstItem="Z7t-aK-HA5" firstAttribute="centerX" secondItem="oMz-RO-VaB" secondAttribute="centerX" id="w63-7Y-UYC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GuW-dT-wv2"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="240"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97j-II-3Dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="29"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IoG-pZ-ZLA">
+            <objects>
+                <viewController storyboardIdentifier="expanded" id="490-OQ-9Qh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eOo-9t-VAd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Note Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGE-qr-UaN">
+                                <rect key="frame" x="16" y="20" width="231" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="bKM-rP-szU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Uqz-TA-t8g">
+                                <rect key="frame" x="16" y="58" width="288" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u7-cf-q9n">
+                                <rect key="frame" x="255" y="20" width="49" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Send"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4u7-cf-q9n" firstAttribute="leading" secondItem="wGE-qr-UaN" secondAttribute="trailing" constant="8" symbolic="YES" id="9pD-3C-1v3"/>
+                            <constraint firstItem="wGE-qr-UaN" firstAttribute="leading" secondItem="Uqz-TA-t8g" secondAttribute="leading" id="Dl5-3p-TWD"/>
+                            <constraint firstItem="Uqz-TA-t8g" firstAttribute="top" secondItem="4u7-cf-q9n" secondAttribute="bottom" constant="8" symbolic="YES" id="P5t-EV-caa"/>
+                            <constraint firstItem="wGE-qr-UaN" firstAttribute="top" secondItem="4u7-cf-q9n" secondAttribute="top" id="PH7-8m-0XY"/>
+                            <constraint firstItem="4u7-cf-q9n" firstAttribute="trailing" secondItem="eOo-9t-VAd" secondAttribute="trailingMargin" id="Q6d-Ln-9VA"/>
+                            <constraint firstAttribute="bottom" secondItem="Uqz-TA-t8g" secondAttribute="bottom" constant="20" symbolic="YES" id="ag6-lv-Tp7"/>
+                            <constraint firstItem="Uqz-TA-t8g" firstAttribute="trailing" secondItem="4u7-cf-q9n" secondAttribute="trailing" id="llH-ci-wvd"/>
+                            <constraint firstItem="Uqz-TA-t8g" firstAttribute="top" secondItem="wGE-qr-UaN" secondAttribute="bottom" constant="10" id="oAW-fb-DUt"/>
+                            <constraint firstItem="wGE-qr-UaN" firstAttribute="leading" secondItem="eOo-9t-VAd" secondAttribute="leadingMargin" id="oTg-qY-A4A"/>
+                            <constraint firstItem="4u7-cf-q9n" firstAttribute="top" secondItem="f1J-N4-meW" secondAttribute="top" id="q4u-ww-8Nj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f1J-N4-meW"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjp-Lj-MFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="113"/>
+        </scene>
+    </scenes>
+</document>
